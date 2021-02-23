@@ -19,16 +19,16 @@
 
 ### step1：划分后端接口 app 文件结构目录
 
-app
-├── config
-│ ├── db.js （存放 mongodb 的文件）
-│ └── key.js （存放 jwt 加密文件）
-├── index.js （入口文件，引入 mongo，routes 文件，添加监听）
-├── model
-│ └── user.js （定义 user 模型数据库文件）
-└── router
-├── index.js （导出接口给 app 使用）
-└── user.js （存放 user 模型相关的接口逻辑（注册，登陆等））
+      app
+      ├── config
+      │ ├── db.js （存放 mongodb 的文件）
+      │ └── key.js （存放 jwt 加密文件）
+      ├── index.js（入口文件，引入 mongo，routes 文件，添加监听）
+      ├── model
+      │ └── user.js （定义user模型数据库文件）
+      └── router
+      ├── index.js （导出接口给 app 使用）
+      └── user.js （存放 user 模型相关的接口逻辑（注册，登陆等））
 
 ### step2：nodemon 热加载入口文件
 
